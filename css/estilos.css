@@ -5,3 +5,36 @@ body
 	margin: 0 auto; 
 	max-width: 1024px; 
 }
+body header
+{
+	background: blue;
+	border: 1px solid black; /*alrededor*/
+	border-radius: 5px; /*esquinas*/
+	color: white;
+}
+body header h1
+{
+	text-align: center;
+}
+body header nav ul li
+{
+	/*border: 1px solid yellow;*/
+	background: white;
+	border-radius: 3px;
+	color: black;
+	display: inline-block;	/*Rompe el modelo de caja	*/
+	margin: 0px 50px;
+	padding: 5px;
+
+}
+
+body header nav ul
+{
+	text-align: center;
+}
+
+header nav ul li:hover
+{
+	background: black;
+	color: white;
+}
