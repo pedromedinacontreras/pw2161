@@ -10,10 +10,12 @@ body header
 	background: blue;
 	border: 1px solid black; /*alrededor*/
 	border-radius: 5px; /*esquinas*/
+	box-shadow: 5px 5px black;
 	color: white;
 }
 body header h1
 {
+	text-shadow: 5px 5px 10px black;
 	text-align: center;
 }
 body header nav ul li
@@ -21,9 +23,10 @@ body header nav ul li
 	/*border: 1px solid yellow;*/
 	background: white;
 	border-radius: 3px;
+	box-shadow: -5px 5px black;
 	color: black;
 	display: inline-block;	/*Rompe el modelo de caja	*/
-	margin: 0px 50px;
+	margin: 0px 30px;
 	padding: 5px;
 
 }
@@ -37,4 +40,26 @@ header nav ul li:hover
 {
 	background: black;
 	color: white;
+}
+
+header img
+{
+	width:80px;
+	margin-right: 20px;
+	margin-top: 20px;
+	float: right;
+}
+
+/*Aqui van los id's*/
+#seccion1
+{
+	border: 10px solid red;
+}
+
+#seccion1 article
+{
+	border:10px solid black;
+	display:inline-block;
+	width: 47.8%;
+	vertical-align: top;
 }
