@@ -1,5 +1,6 @@
 body
 {
+	font-family: 'Passion One', cursive;
 	background: rgb(255,255,255); /*fondo*/
 	color: #000000; /*letra* cmd+shift + 7*/
 	margin: 0 auto; 
@@ -7,6 +8,7 @@ body
 }
 body header
 {
+	font-family: 'Passion One', cursive;
 	background: blue;
 	border: 1px solid black; /*alrededor*/
 	border-radius: 5px; /*esquinas*/
@@ -15,11 +17,13 @@ body header
 }
 body header h1
 {
+	font-family: 'Smokum', cursive;
 	text-shadow: 5px 5px 10px black;
 	text-align: center;
 }
 body header nav ul li
 {
+	font-family: 'Astloch', cursive;
 	/*border: 1px solid yellow;*/
 	background: white;
 	border-radius: 3px;
@@ -33,6 +37,7 @@ body header nav ul li
 
 body header nav ul
 {
+	font-family: 'Amatic SC', cursive;
 	text-align: center;
 }
 
@@ -58,6 +63,7 @@ header img
 
 #seccion1 article
 {
+	font-family: 'Open Sans', sans-serif;
 	border:10px solid black;
 	display:inline-block;
 	width: 47.8%;
