@@ -82,9 +82,10 @@ header nav ul li
 #seccion02 input
 {
 	background: white;
+	border-radius: 5px;
 	color:blue;
 	display: block;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	margin: 0 auto;
 	padding: 2px 0px 2px 0px;	
 }
