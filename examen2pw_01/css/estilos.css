@@ -1,0 +1,149 @@
+body
+{
+	font-family: arial;
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+header
+{
+	border-bottom: solid gray;
+	border-bottom-style: dotted;
+	padding-bottom: 50px;
+	padding-top: 25px;
+}
+header ul
+{
+	display: inline-block;
+	margin-top: 50px;
+	padding-left: 1px;
+}
+
+header ul li
+{
+	display: inline-block;
+	padding-right: 20px;
+}
+
+#seccion1
+{
+	padding-bottom: 50px;
+}
+
+#secc1art1
+{
+	color: gray;
+	display: inline-block;
+	width: 60%;
+}
+
+#secc1art1 img
+{
+	padding-top: 20px;
+	width: 46%;
+}
+
+#secc1art2
+{
+	display: inline-block;
+	float: right;
+	vertical-align: top;
+	width: 38%;
+
+}
+
+#seccion2
+{
+	color: gray;
+	padding-bottom: 30px;
+}
+
+#seccion2 img
+{
+	width: 30px;
+}
+
+#seccion2 span
+{
+	margin-left: 40px;
+}
+
+#seccion3
+{
+	display: inline-block;
+	width: 100%;
+}
+#garantia
+{
+	margin-top: -90px;
+	width: 150px;
+}
+
+#bici
+{
+	padding-top: 20px;
+	width:400px;
+}
+
+#buy
+{
+	position: relative;
+	left: 100px;
+	top: 120px;
+	width: 60px;
+
+}
+
+#chicos img
+{
+	float: right;
+	padding: 0px 5px 0px 5px;
+	width: 40px;
+}
+
+#goto
+{
+	position: relative;
+	left: 350px;
+	top: 75px;
+	width: 180px;
+}
+
+.titulo
+{
+	border-bottom: solid gray;
+	color: gray;
+	display: inline-block;
+	text-align: left;
+	margin-bottom: 10px;
+	width: 150px;
+}
+
+.ultimo
+{
+	color: gray;
+	display: inline-block;
+	vertical-align: top;
+	width: 18%;
+
+}
+.negra
+{
+	color: #111111;
+	font-size: 4em;
+	font-weight: bold;
+	padding-top: 20px;
+}
+
+.verde
+{
+	border-bottom: solid gray;
+	border-bottom-style: dotted;
+	color: #9BF47B;
+	font-weight: bold;
+	font-size: 4em;
+	padding-bottom: 20px;
+	width: 100%;
+
+}
