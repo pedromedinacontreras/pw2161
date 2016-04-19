@@ -1,0 +1,37 @@
+body
+{
+	max-width: 1024px;
+	text-align: center;
+}
+body form table
+{
+	margin-left: 300px;
+	margin-top: 100px;
+}
+body tr td
+{
+	
+}
+body form input[type="button"]
+{
+	background: white;
+	border:0px;
+	font-size: 7em;
+	height: 150px;
+	width: 150px;
+}
+table{
+	border-collapse: collapse;
+}
+#s1 td
+{
+	border-bottom: 3px solid red;
+}
+#s2 td
+{
+	border-bottom: 3px solid red;
+}
+.c1
+{
+	border-right: 3px solid red;
+}
