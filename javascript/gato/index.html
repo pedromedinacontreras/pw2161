@@ -2,31 +2,36 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/estilos.css">
-	<script src="js/gato.js"></script>
-	<title>Gato</title>
+	<title>Juego del gato</title>
+	<link rel="stylesheet" href="css/estilosGato.css">
+	<script src="js/javascriptGato.js"></script>
 </head>
 <body>
-	<header> <h1>Juego del gato </h1></header>
-	<form action="#" name="gato">
-		<table>
-			<tr id="s1">
-				<td class="c1"><input type="button" value="" id="s11"name="s11" onclick="seleccion(this.value,this.id)"></td>
-				
-				<td class="c1"><input type="button" value="" id="s12"name="s12" onclick="seleccion(this.value,this.id)"></td>
-				<td><input type="button" value="" id="s13"name="s13" onclick="seleccion(this.value,this.id)"></td>
-			</tr>
-			<tr id="s2">
-				<td class="c1"><input type="button" value="" id="s21"name="s21" onclick="seleccion(this.value,this.id)"></td>
-				<td class="c1"><input type="button" value="" id="s22"name="s22" onclick="seleccion(this.value,this.id)"></td>
-				<td><input type="button" value="" id="s23"name="s23" onclick="seleccion(this.value,this.id)"></td>
-			</tr>
-			<tr>
-				<td class="c1"><input type="button" value="" id="s31"name="s31" onclick="seleccion(this.value,this.id)"></td>
-				<td class="c1"><input type="button" value="" id="s32"name="s32" onclick="seleccion(this.value,this.id)"></td>
-				<td><input type="button" value="" id="s33"name="s33" onclick="seleccion(this.value,this.id)"></td>
-			</tr>
-		</table>
-	</form>
+	<header>
+		<h1 id="titulojuego">Juego del gato</h1>
+	</header>
+	<section>
+		<article>
+			<form action="#" name="juegogato">
+				<table>
+					<tr>
+						<td onclick="escribe(this.id)" id="unouno">&nbsp;</td>
+						<td onclick="escribe(this.id)" id="unodos">&nbsp;</td>
+						<td onclick="escribe(this.id)" id="unotres">&nbsp;</td>
+					</tr>
+					<tr>
+						<td onclick="escribe(this.id)" id="dosuno">&nbsp;</td>
+						<td onclick="escribe(this.id)" id="dosdos">&nbsp;</td>
+						<td onclick="escribe(this.id)" id="dostres">&nbsp;</td>
+					</tr>
+					<tr>
+						<td onclick="escribe(this.id)" id="tresuno">&nbsp;</td>
+						<td onclick="escribe(this.id)" id="tresdos">&nbsp;</td>
+						<td onclick="escribe(this.id)" id="trestres">&nbsp;</td>
+					</tr>
+				</table>
+			</form>
+		</article>
+	</section>
 </body>
 </html>
