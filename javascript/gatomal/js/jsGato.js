@@ -1,5 +1,6 @@
 //variables globales
 //se usan en todo el código
+alert("KHE");
 var turno = false;
 var letraCasilla = "";
 var cuentaJuego = 0;
@@ -7,7 +8,22 @@ var cuentaJugadas = 0;
 
 function iniciaGato()
 {
-	//en construcción 77
+	//Preguntar si el navegador es compatible con localStorage
+	if(typeof(Storage) != "undefined")
+	{
+		if(localStorage.webCuentaJuego)
+		{
+			cuentaJuego = localStorage.webCuentaJuego;
+			cuentaJuego = cuentaJuego + 1;
+		}
+		else
+		{
+			cuentaJuego = 1;
+		}
+		document.getElementById("TituloJuego").innerHTML = "Juego del gato (#"+cuentaJuego+")";
+	}
+	else
+		alert("Utiliza un navegador actualizado");
 }
 
 function escribe(casilla)
@@ -16,6 +32,7 @@ function escribe(casilla)
 	letraCasilla = document.getElementById(casilla).innerHTML;
 	if(letraCasilla=="&nbsp;")
 	{
+		
 		if(turno == false)
 		{
 			letra ="X";
@@ -25,7 +42,7 @@ function escribe(casilla)
 			letra="O"
 		}
 		document.getElementById(casilla).innerHTML=letra;
-		turno = !turno;
+		turno != turno;
 	}
 	cuentaJugadas = cuentaJugadas + 1;
 	//Para saber quien ganó, validamos la jugada
@@ -35,6 +52,7 @@ function escribe(casilla)
 function validaJugada
 {
 	var ganador = false;
+
 	var b11 = document.getElementById("unouno").innerHTML;
 	var b12 = document.getElementById("unodos").innerHTML;
 	var b13 = document.getElementById("unotres").innerHTML;

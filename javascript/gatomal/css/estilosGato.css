@@ -22,17 +22,6 @@ section article table td
 	width: 100px;
 }
 
-#refresca
-{
-	background: white;
-	border-radius: 5px;
-	color: blue;
-	font-family: tahoma;
-	font-size: 2em;
-	margin-left: 41%;
-	margin-top: 40px;
-}
-
 #unouno,#unodos,#dosuno,#dosdos
 {
 	border-bottom: 8px solid red;
