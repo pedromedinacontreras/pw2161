@@ -16,7 +16,10 @@ var inicio = function()
 			  dataType: 'json',
 			  success: function(data){
 			  console.log(data);
-			  alert(data.results[0].name.first+" "+data.results[0].name.last);
+			  //alert(data.results[0].name.first+" "+data.results[0].name.last);
+			  $("#fotoPersona").attr("src",data.results[0].picture.large);
+			  $("#txtNombreUser").html(data.results[0].name.first);
+			  $("#txtApellidoUser").html(data.results[0].name.last);			  
 			  },
 			  error:function(xhr,error,throws){
 			  	console.log("Ocurrió un error");

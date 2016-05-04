@@ -1,0 +1,44 @@
+body
+{
+	font-family: Comic Sans MS;
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+body h2
+{
+	text-align: center;
+}
+
+body article
+{
+	background-image: url("../img/pub.jpeg");
+	border: 2px solid brown;
+	border-radius: 5px;
+	margin-left: 20%;
+	padding: 25px 0px 25px 0px;
+	text-align: center;
+	max-width: 600px;
+}
+
+body article img
+{
+	width: 250px;
+}
+
+body article div
+{
+	color: white;
+	font-size: 1.5em;
+}
+
+body article button
+{
+	background: black;
+	color: white;
+	font-family: Comic Sans MS;
+	font-size: 1.5em;
+	margin-top: 10px;
+	width: 20%;
+}
