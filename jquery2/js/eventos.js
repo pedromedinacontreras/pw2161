@@ -2,7 +2,9 @@ var iniciaApp = function()
 {
 	var validaEntrada = function()
 	{
-		event.preventdefault;
+		//Invalida los eventos que 
+		//no corresponden a esta función
+		event.preventDefault();
 		var usuario = $("#txtUsuario").val();
 		var clave = $("#txtClave").val();
 
@@ -20,15 +22,24 @@ var iniciaApp = function()
 		}
 
 		//2-Verificar usuario y contraseña
-		if(usuario == "pw" && clave == "1234")
-		{
-			alert("Bienvenido "+ usuario)
-			//Dar entrada al usuario
-			$("#datosUsuario").hide(); //escondemos
-			$("nav").show("slow"); //mostramos
-		}
-		else
-			alert("usuario y/o contraseña incorrecta");
+		var parametros = "accion=validaEntrada"+
+		"&usuario="+usuario+"&clave="+clave+"&id="+Math.random();
+		$.ajax({
+			beforeSend:function(){
+				console.log("Validar al usuario");
+			},
+			cache: false,
+			type: "POST",
+			dataType: "json",
+			url:"php/funciones.php",
+			data:parametros,
+			success: function(response){
+
+			},
+			error: function(xhr,ajaxOptions,thrownError){
+				console.log("Algo salió mal");
+			}
+		});
 
 		console.log("Se disparó el submit");
 	}
