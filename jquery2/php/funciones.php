@@ -37,7 +37,7 @@ function validaEntrada()
 	$conexion = mysql_connect("localhost","root","");
 	//Seleccionar base de datos
 	mysql_select_db("cursopw");
-	$validar = sprintf("select usuario, clave from usuarios where usuario=%s and clave=%s limit1",$usuario,$clave);
+	$validar = sprintf("select usuario, clave from usuarios where usuario=%s and clave=%s limit 1",$usuario,$clave);
 	$resultado = mysql_query($validar);
 	//Preguntamos si se trae un registro
 	if(mysql_num_rows($resultado) > 0)

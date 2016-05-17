@@ -31,8 +31,8 @@ var iniciaApp = function()
 			cache: false,
 			type: "POST",
 			dataType: "json",
-			url:"php/funciones.php",
-			data:parametros,
+			url: "php/funciones.php",
+			data: parametros,
 			success: function(response){
 				if(response.respuesta == true)
 				{
