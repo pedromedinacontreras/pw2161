@@ -14,7 +14,7 @@
 		<nav>
 			<ul>
 				<li><button class="btn btn-warning">Inicio</button></li>
-				<li><button class="btn btn-info">Altas</button> </li>
+				<li><button class="btn btn-info" id="btnAltas">Altas</button> </li>
 				<li><button class="btn btn-success">Bajas</button></li>
 				<li><button class="btn btn-default">Cambios</button></li>
 				<li><button class="btn btn-primary">Consultas</button></li>
@@ -31,8 +31,8 @@
 				  </article>
 				  <article class="panel-body">
 				    <form action="#" id="frmValidaEntrada">
-				    	<input type="text" id="txtUsuario"  placeholder="Usuario" requiered class="form-control" autofocus>
-				    	<input type="password" id="txtClave"  placeholder="Contraseña" requiered class="form-control">
+				    	<input type="text" id="txtUsuario"  placeholder="Usuario" required class="form-control" autofocus>
+				    	<input type="password" id="txtClave"  placeholder="Contraseña" required class="form-control">
 				    	<input type="submit" class="btn btn-success btn-lg btn-block" value="Entrar">
 				    </form>
 				  </article>
@@ -40,18 +40,19 @@
 			</article>
 		</section>
 		<section>
-			<article id="altaUsuarios"></article>
+			<article id="altaUsuarios">
 			<h2>Alta de usuarios</h2>
 			<form action="#" id="frmAltaUsuarios">
-				<input type="text" class="form-control" id="txtNombreUsuario" placeholder="Usuario" name="txtNombreUsuario" requiered>
-				<input type="text" class="form-control" id="txtClaveUsuario" placeholder="Clave" name="txtClaveUsuario" requiered>
+				<input type="text" class="form-control" id="txtNombreUsuario" placeholder="Usuario" name="txtNombreUsuario" required>
+				<input type="text" class="form-control" id="txtClaveUsuario" placeholder="Clave" name="txtClaveUsuario" required>
 				<select name="txtTipoUsuario" id="txtTipoUsuario" class="form-control">
 					<option value="vigente">Vigente</option>
 					<option value="baja">Baja</option>
 				</select>
-				<input type="text" class="form-control" id="txtDepartamento" name="txtDepartamento" requiered>
-				<input type="submit" id="btnAltaUsuario" name="btnAltaUsuario" class="btn btn-success btn-lg btn-block" requiered>
+				<input type="text" class="form-control" id="txtDepartamento" name="txtDepartamento" required>
+				<input type="submit" id="btnAltaUsuario" name="btnAltaUsuario" class="btn btn-success btn-lg btn-block" required>
 			</form>
+			</article>
 		</section>
 	</main>
 	<footer>
